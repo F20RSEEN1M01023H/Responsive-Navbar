@@ -1,16 +1,35 @@
-# React + Vite
+# 📱 Responsive Navbar (React + Tailwind CSS)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A clean and fully responsive **Navigation Bar** built with **React + Tailwind CSS**.  
+Works seamlessly on both desktop and mobile devices with a **hamburger menu** for small screens.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## React Compiler
+- 🖥️ **Desktop view** → Inline navigation links
+- 📱 **Mobile view** → Hamburger (`☰`) that toggles a dropdown menu
+- 🎨 Styled with Tailwind CSS
+- 🔄 State management with React `useState` for menu toggle
+- ✨ Smooth hover effects for links
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 📸 Demo Screenshot
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Add your screenshot as `screenshot.png` in the project root, then it will show here:
+
+![Navbar Screenshot](./src/assets/screencapture-localhost-5173-2025-09-24-10_03_57.png)
+![Navbar Screenshot](./src/assets/screencapture-localhost-5173-2025-09-24-10_04_18.png)
+![Navbar Screenshot](./src/assets/screencapture-localhost-5173-2025-09-24-10_06_15.png)
+
+---
+
+📂 Project Structure
+src/
+├── components/
+│ └── Navbar.jsx # Responsive Navbar Component
+├── App.jsx # Example usage
+└── index.js # Main entry
+
+---
