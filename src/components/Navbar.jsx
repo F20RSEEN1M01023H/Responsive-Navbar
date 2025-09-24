@@ -2,47 +2,60 @@ import React, { useState } from "react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-
   return (
     <div>
-      <nav className="bg-slate-900 text-white px-6 py-4 flex justify-between items-center">
-        <h1 className="text-3xl font-bold font-mono ">My Logo</h1>
+      <nav className=" text-white font-medium bg-slate-900 flex justify-between px-6 py-4">
+        <h1 className="text-3xl font-bold font-mono">My Logo</h1>
 
-        <ul className="hidden md:flex space-x-6">
+        <ul className="hidden md:flex space-x-4">
           <li>
-            <a href="#">Home</a>
+            <a href="#" className="hover:text-amber-400">
+              Home
+            </a>
           </li>
           <li>
-            <a href="#">About</a>
+            <a href="#" className="hover:text-amber-400">
+              About
+            </a>
           </li>
           <li>
-            <a href="#">Services</a>
+            <a href="#" className="hover:text-amber-400">
+              Services
+            </a>
           </li>
           <li>
-            <a href="#">Contact Us</a>
+            <a href="#" className="hover:text-amber-400">
+              Contact Us
+            </a>
           </li>
         </ul>
-
         <button
-          className="md:hidden text-2xl focus:outline-none"
+          className="md:hidden text-4xl"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? "✖" : "☰"}
         </button>
-
         {isOpen && (
-          <ul className="absolute top-16 left-0 w-full bg-gray-800 flex flex-col items-center space-y-4 py-6 md:hidden">
+          <ul className="absolute top-18 left-0 w-full text-center space-y-4 py-3 bg-slate-900/80">
             <li>
-              <a href="#">Home</a>
+              <a href="#" className="hover:text-amber-400 ">
+                Home
+              </a>
             </li>
             <li>
-              <a href="#">About</a>
+              <a href="#" className="hover:text-amber-400">
+                About
+              </a>
             </li>
             <li>
-              <a href="#">Services</a>
+              <a href="#" className="hover:text-amber-400">
+                Services
+              </a>
             </li>
             <li>
-              <a href="#">Contact Us</a>
+              <a href="#" className="hover:text-amber-400">
+                Contact Us
+              </a>
             </li>
           </ul>
         )}
